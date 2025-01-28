@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amigo Secreto</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>Amigo Secreto</h1>
+      </div>
+      <div class="input-group">
+        <input
+          type="text"
+          id="nomeInput"
+          class="input"
+          placeholder="Digite o nome do seu amigo"
+        />
+        <button id="adicionarNome" class="btn">Adicionar</button>
+      </div>
+
+      <!-- Novo Contêiner para a Lista de Nomes -->
+      <div class="name-list-container">
+        <ul id="listaDeNomes" class="name-list"></ul>
+      </div>
+
+      <button id="sortearAmigo" class="btn">Sortear Amigo Secreto</button>
+
+      <!-- Novo contêiner para alinhar o resultado e o botão OK -->
+      <div class="result-container">
+        <p id="resultado" class="result"></p>
+        <button id="okButton" class="btn" style="display: none;">OK?</button>
+      </div>
+
+      <div id="toast" class="toast"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
